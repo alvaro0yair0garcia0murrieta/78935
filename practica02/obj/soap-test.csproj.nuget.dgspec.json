@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a-rac\\OneDrive\\Escritorio\\practica03\\soap-test.csproj": {}
+    "C:\\Users\\a-rac\\OneDrive\\Escritorio\\practica02\\soap-test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a-rac\\OneDrive\\Escritorio\\practica03\\soap-test.csproj": {
+    "C:\\Users\\a-rac\\OneDrive\\Escritorio\\practica02\\soap-test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a-rac\\OneDrive\\Escritorio\\practica03\\soap-test.csproj",
+        "projectUniqueName": "C:\\Users\\a-rac\\OneDrive\\Escritorio\\practica02\\soap-test.csproj",
         "projectName": "soap-test",
-        "projectPath": "C:\\Users\\a-rac\\OneDrive\\Escritorio\\practica03\\soap-test.csproj",
+        "projectPath": "C:\\Users\\a-rac\\OneDrive\\Escritorio\\practica02\\soap-test.csproj",
         "packagesPath": "C:\\Users\\a-rac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a-rac\\OneDrive\\Escritorio\\practica03\\obj\\",
+        "outputPath": "C:\\Users\\a-rac\\OneDrive\\Escritorio\\practica02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a-rac\\AppData\\Roaming\\NuGet\\NuGet.Config"
