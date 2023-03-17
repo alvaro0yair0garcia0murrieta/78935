@@ -5,22 +5,34 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.4</version>
+		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>mx.uv</groupId>
-	<artifactId>practica03</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>producing-web-service-complete</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>practica03</name>
-	<description>project for Spring Boot</description>
+	<name>producing-web-service-complete</name>
+	<description>Demo project for Spring Boot</description>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
+		<!-- tag::springws[] -->
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+		</dependency>
+		<!-- end::springws[] -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -35,6 +47,26 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<!-- tag::xsd[] -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxb2-maven-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<id>xjc</id>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<sources>
+						<source>${project.basedir}/src/main/resources/ESQUEMA.xsd</source>
+					</sources>
+				</configuration>
+			</plugin>
+			<!-- end::xsd[] -->
 		</plugins>
 	</build>
 
