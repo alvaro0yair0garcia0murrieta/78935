@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Define the course element -->
+  <xs:element name="course">
+    <xs:complexType>
+      <xs:sequence>
+
+        <!-- Define the elements for course information -->
+        <xs:element name="courseCode" type="xs:string"/>
+        <xs:element name="courseName" type="xs:string"/>
+        <xs:element name="courseDescription" type="xs:string"/>
+        <xs:element name="instructor" type="xs:string"/>
+        <xs:element name="credits" type="xs:decimal"/>
+
+        <!-- Define the elements for course schedule -->
+        <xs:element name="schedule">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="day" type="xs:string"/>
+              <xs:element name="time" type="xs:string"/>
+              <xs:element name="location" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Define the elements for course prerequisites -->
+        <xs:element name="prerequisites">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="prerequisite" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
