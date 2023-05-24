@@ -1,0 +1,7 @@
+type Profesor{
+    nombre:String
+}
+type Classroom{
+    numero: String
+    caracteristicas: String
+}

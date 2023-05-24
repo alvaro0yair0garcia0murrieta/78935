@@ -33,6 +33,22 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!--QLS EMPIEZA-->
+	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-graphql -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-graphql -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-graphql</artifactId>
+    <version>3.0.6</version>
+</dependency>
+
+
+	
+	
+	
+	
+	
 	</dependencies>
 
 	<build>

@@ -7,7 +7,7 @@ public Profesor(String nombre) {
     this.nombre = nombre;
 }
 
-public String getNombre() {
+public String getName() {
     return nombre;
 }
 
